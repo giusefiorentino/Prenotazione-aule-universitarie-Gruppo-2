@@ -1,7 +1,7 @@
 package it.unisa.diem.softeng.prenotazioneauleuniversitarie;
 
 public class Aula {
-    private final String codice;
+    private final String id;
     private String nome;
     private String edificio;
     private int piano;
