@@ -2,16 +2,14 @@ package it.unisa.diem.softeng.prenotazioneauleuniversitarie;
 
 public class Aula {
     private final String codice;
-    private final String nome;
-    private final String cognome;
-    private final String edificio;
-    private final int piano;
-    private final int capienza;
+    private String nome;
+    private String edificio;
+    private int piano;
+    private int capienza;
 
-    public Aula(String codice, String nome, String cognome, String edificio, int piano, int capienza) {
+    public Aula(String codice, String nome, String edificio, int piano, int capienza) {
         this.codice = codice;
         this.nome = nome;
-        this.cognome = cognome;
         this.edificio = edificio;
         this.piano = piano;
         this.capienza = capienza;
@@ -25,10 +23,6 @@ public class Aula {
         return nome;
     }
 
-    public String getCognome() {
-        return cognome;
-    }
-
     public String getEdificio() {
         return edificio;
     }
@@ -39,6 +33,22 @@ public class Aula {
 
     public int getCapienza() {
         return capienza;
+    }
+    
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+
+    public void setEdificio(String edificio) {
+        this.edificio = edificio;
+    }
+
+    public void setPiano(int piano) {
+        this.piano = piano;
+    }
+
+    public void setCapienza(int capienza) {
+        this.capienza = capienza;
     }
 
 }
