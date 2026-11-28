@@ -7,16 +7,16 @@ public class Aula {
     private int piano;
     private int capienza;
 
-    public Aula(String codice, String nome, String edificio, int piano, int capienza) {
-        this.codice = codice;
+    public Aula(String id, String nome, String edificio, int piano, int capienza) {
+        this.id = id;
         this.nome = nome;
         this.edificio = edificio;
         this.piano = piano;
         this.capienza = capienza;
     }
 
-    public String getCodice() {
-        return codice;
+    public String Id() {
+        return id;
     }
 
     public String getNome() {
